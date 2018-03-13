@@ -1,36 +1,36 @@
 
-#Code challenge app: 
+# Code challenge app: 
 
-##Build application: 
+## Build application: 
 
 mvn clean install
 
-##Start application:
+## Start application:
 cd target
 java -jar challenge-jar-with-dependencies.jar
 
-##API description:
+## API description:
 
-##To add new message for user:
+### To add new message for user:
 http://localhost:8080/add-message?user=[user_name]&message=[new message content]
 Remarks: if user doesn't exists then above line will add new user
 
-##To show messages of existing user:
+### To show messages of existing user:
 http://localhost:8080/show-messages?user=[user_name]
 
 
-##To show messages of existing user in reverse order:
+### To show messages of existing user in reverse order:
 http://localhost:8080/show-messages?user=[user_name]&reverse-order
 
 
-##To add follow user to other user:
+### To add follow user to other user:
 http://localhost:8080/add-follow-user?user=[user_name]&follow-user=[follow_user_name]
 Remarks: users must exists
 
 
-##To show all messages from all "follow-users"
+### To show all messages from all "follow-users"
 http://localhost:8080/show-follow-users-messages?user=[user_name]
 
 
-##To show all messages from all "follow-users" in reverse order
+### To show all messages from all "follow-users" in reverse order
 http://localhost:8080/show-follow-users-messages?user=[user_name]&reverse-order
