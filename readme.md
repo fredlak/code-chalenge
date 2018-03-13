@@ -7,6 +7,7 @@ mvn clean install
 
 ## Start application:
 cd target
+
 java -jar challenge-jar-with-dependencies.jar
 
 ## API description:
